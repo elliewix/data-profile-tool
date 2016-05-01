@@ -1,0 +1,9 @@
+File name: {file_name}
+File size: {file_size}
+File path: {file_path}
+
+Columns: {num_columns}
+Rows: {num_rows}
+
+Column labels:
+{col_names}
