@@ -1,6 +1,6 @@
 Data Profile for vagrants/MiddlesexVagrants1777-1786v1.1.csv
 
-Generated on: 2016-May-03 18:51:22
+Generated on: 2016-May-07 14:06:16
 
 
 Number of columns: 29
@@ -59,11 +59,11 @@ Number of rows: 14789
 * Reason for missing values: 
 
 * percent_digit: 0%
-* percent_missing: 0%
+* percent_missing: 22%
 * min_digit: no digits
-* missing: 0
+* missing: 3260
 * unique_value_content: The values are:
-	* [unknown]
+	* [missing code]
 	* M
 	* F
 
@@ -80,7 +80,7 @@ Number of rows: 14789
 * percent_digit: 0%
 * percent_missing: 0%
 * min_digit: no digits
-* missing: 0
+* missing: 2
 * unique_value_content: The values are:
 	* [Daughter]
 	* [unclear]
@@ -88,7 +88,7 @@ Number of rows: 14789
 	* [Sister]
 	* [lead vagrant]
 	* [Child]
-	* [unknown]
+	* [missing code]
 	* [Wife]
 
 * unique_values: 8 (this includes missing values)
@@ -387,7 +387,7 @@ Number of rows: 14789
 * percent_digit: 0%
 * percent_missing: 0%
 * min_digit: no digits
-* missing: 0
+* missing: 19
 * unique_value_content: The values are:
 	* 51.6516;-0.0837
 	* 51.433315;-0.497382
@@ -396,7 +396,7 @@ Number of rows: 14789
 	* 51.69889;-0.22885
 	* 51.4835;-0.5221
 	* 51.524444;-0.107222
-	* [unknown]
+	* [missing code]
 
 * unique_values: 8 (this includes missing values)
 * max_digit: no digits
@@ -409,9 +409,9 @@ Number of rows: 14789
 * Reason for missing values: 
 
 * percent_digit: 0%
-* percent_missing: 0%
+* percent_missing: 1%
 * min_digit: no digits
-* missing: 0
+* missing: 84
 * unique_value_content: Not reported: More than 10 unique values
 * unique_values: 120 (this includes missing values)
 * max_digit: no digits
@@ -424,9 +424,9 @@ Number of rows: 14789
 * Reason for missing values: 
 
 * percent_digit: 0%
-* percent_missing: 0%
+* percent_missing: 28%
 * min_digit: no digits
-* missing: 0
+* missing: 4134
 * unique_value_content: Not reported: More than 10 unique values
 * unique_values: 3051 (this includes missing values)
 * max_digit: no digits
@@ -454,9 +454,9 @@ Number of rows: 14789
 * Reason for missing values: 
 
 * percent_digit: 0%
-* percent_missing: 0%
+* percent_missing: 5%
 * min_digit: no digits
-* missing: 0
+* missing: 727
 * unique_value_content: Not reported: More than 10 unique values
 * unique_values: 129 (this includes missing values)
 * max_digit: no digits
@@ -471,7 +471,7 @@ Number of rows: 14789
 * percent_digit: 0%
 * percent_missing: 0%
 * min_digit: no digits
-* missing: 0
+* missing: 12
 * unique_value_content: Not reported: More than 10 unique values
 * unique_values: 14 (this includes missing values)
 * max_digit: no digits
@@ -484,9 +484,9 @@ Number of rows: 14789
 * Reason for missing values: 
 
 * percent_digit: 0%
-* percent_missing: 0%
+* percent_missing: 40%
 * min_digit: no digits
-* missing: 0
+* missing: 5955
 * unique_value_content: Not reported: More than 10 unique values
 * unique_values: 2097 (this includes missing values)
 * max_digit: no digits
@@ -514,9 +514,9 @@ Number of rows: 14789
 * Reason for missing values: 
 
 * percent_digit: 0%
-* percent_missing: 0%
+* percent_missing: 5%
 * min_digit: no digits
-* missing: 0
+* missing: 734
 * unique_value_content: Not reported: More than 10 unique values
 * unique_values: 118 (this includes missing values)
 * max_digit: no digits
@@ -531,7 +531,7 @@ Number of rows: 14789
 * percent_digit: 0%
 * percent_missing: 0%
 * min_digit: no digits
-* missing: 0
+* missing: 18
 * unique_value_content: Not reported: More than 10 unique values
 * unique_values: 14 (this includes missing values)
 * max_digit: no digits

@@ -15,7 +15,7 @@ import pandas as pd
 import glob
 import markdown
 import sys
-
+import json
 
 
 def getFiles(path):
@@ -112,7 +112,7 @@ def make_md(file_data, headers, target, print_me = True, make_md = True, make_ht
                 md += "* " + column + ": " + str(val) + "\n"
             md += "\n"
         if print_me:
-            print md#return md
+            pass#print md#return md
         if make_md:
             write_name = f.split('/')[-1].split('.')[0] + '_DataProfile.md'
             with open(target + write_name, 'wt') as fout:
@@ -121,7 +121,7 @@ def make_md(file_data, headers, target, print_me = True, make_md = True, make_ht
             write_name = f.split('/')[-1].split('.')[0] + '_DataProfile.html'
             with open(target + write_name, 'wt') as fout:
                 fout.write(markdown.markdown(md))
-        print "Profiles written into " + target
+    print "Profiles written into " + target
 
 def get_headers(file):
     with open(file, 'rU') as fin:
@@ -134,7 +134,11 @@ def main(source, target, kind, missingcode):
 
     #files = [source + f for f in getFiles(source)]
     files = glob.glob(source + "*")
-    print "Generating profile for: " + ", ".join(files)
+    num_files = len(files)
+    if num_files < 10:
+        print "Generating profile for: " + ", ".join(files)
+    else:
+        print "Generating profiles for " + str(num_files) + " files"
 
     file_data = {}
 
@@ -148,14 +152,22 @@ def main(source, target, kind, missingcode):
                              'columns': csvinfo['cols']})
 
     make_md(file_data, headers, target, print_me = False, make_md = True, make_html = True)
-
+    write_name = f.split('/')[-1].split('.')[0] + '_DataProfile.json'
+    with open(target + write_name, 'wt') as jsonout:
+        json.dump(file_data, jsonout, indent = 4)
 
 
 if __name__ == "__main__":
     args = sys.argv
     #print args
     # ['data_profile.py', '-m', 'vagrants/', 'vagrant-profiles/', '']
-    main(args[2], args[3], args[1], args[4])
+    output_flag = args[1]
+    source_folder = args[2]
+    target_folder = args[3]
+    missing_code = args[4]
+
+    # main(source, target, kind, missingcode)
+    main(source_folder, target_folder, output_flag, missing_code)
     # not dealing with the the mode right now, just letting it make both
 
 
