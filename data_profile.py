@@ -90,7 +90,7 @@ def review_csv(file, mode = 'rt', headers = True, index_row = True, missing = ''
 def make_md(file_name, file_data, headers, target):
     dt = '{:%Y-%b-%d %H:%M:%S}'.format(datetime.datetime.now())
     #print file_data
-    print file_data
+    #print file_data
     #for x, f_data in file_data.iteritems():
         #print f_data
     md = ""
@@ -114,9 +114,9 @@ def make_md(file_name, file_data, headers, target):
         for column, val in data.iteritems():
             md += "* " + column + ": " + str(val) + "\n"
         md += "\n"
-    print file_name
+    #print file_name
     write_name = file_name.split('/')[-1].split('.')[0] + '_DataProfile'
-    print write_name
+    #print write_name
     with open(target + write_name + '.md', 'wt') as fout:
         fout.write(md)
 
@@ -151,13 +151,13 @@ def main(source, target, kind, missingcode):
             all_file_data[f] = ({'file_metadata': finfo, \
                              'csv_basic': csvinfo['csv_basic'], \
                              'columns': csvinfo['cols']})
-            print "looking at " + f
+            #print "looking at " + f
             #print len(all_file_data)
             make_md(f, all_file_data[f], headers, target)
     
     write_name = target.split('/')[-2].split('.')[0] + '_DataProfiles.json'
     with open(target + write_name, 'wt') as jsonout:
-        json.dump(file_data, jsonout, indent = 4)
+        json.dump(all_file_data, jsonout, indent = 4)
 
 
 
