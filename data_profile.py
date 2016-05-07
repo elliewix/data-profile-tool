@@ -87,41 +87,41 @@ def review_csv(file, mode = 'rt', headers = True, index_row = True, missing = ''
             col_info['cols']['col_' + str(i)] = info
     return col_info
             
-def make_md(file_data, headers, target, print_me = True, make_md = True, make_html = False):
+def make_md(file_name, file_data, headers, target):
     dt = '{:%Y-%b-%d %H:%M:%S}'.format(datetime.datetime.now())
-    for f, f_data in file_data.iteritems():
-        md = ""
-        md += "Data Profile for " + f + "\n\n"
-        md += "Generated on: " + dt + "\n"
-        md += "\n\n"
-        basic = f_data['csv_basic']
-        md += "Number of columns: " + str(basic['num_columns']) + "\n"
-        md += "Number of rows: " + str(basic['num_rows']) + "\n"
+    #print file_data
+    print file_data
+    #for x, f_data in file_data.iteritems():
+        #print f_data
+    md = ""
+    md += "Data Profile for " + file_name + "\n\n"
+    md += "Generated on: " + dt + "\n"
+    md += "\n\n"
+    basic = file_data['csv_basic']
+    md += "Number of columns: " + str(basic['num_columns']) + "\n"
+    md += "Number of rows: " + str(basic['num_rows']) + "\n"
+    md += "\n"
+    info = [file_data['columns'] for f in file_data.keys()][0]
+    for key in headers:#key, data in info.iteritems():
+        data = info[key]
+        md += "**" + key + "**" + "\n"
+        md += "-" * (len(key) + 2) + "\n"
+        md += "* Description of column: \n"
+        md += "* Collection methods: \n"
+        md += "* Description of data values and units: \n"
+        md += "* Reason for missing values: \n"
         md += "\n"
-        info = [f_data['columns'] for f in file_data.keys()][0]
-        for key in headers:#key, data in info.iteritems():
-            data = info[key]
-            md += "**" + key + "**" + "\n"
-            md += "-" * (len(key) + 2) + "\n"
-            md += "* Description of column: \n"
-            md += "* Collection methods: \n"
-            md += "* Description of data values and units: \n"
-            md += "* Reason for missing values: \n"
-            md += "\n"
-            for column, val in data.iteritems():
-                md += "* " + column + ": " + str(val) + "\n"
-            md += "\n"
-        if print_me:
-            pass#print md#return md
-        if make_md:
-            write_name = f.split('/')[-1].split('.')[0] + '_DataProfile.md'
-            with open(target + write_name, 'wt') as fout:
-                fout.write(md)
-        if make_html:
-            write_name = f.split('/')[-1].split('.')[0] + '_DataProfile.html'
-            with open(target + write_name, 'wt') as fout:
-                fout.write(markdown.markdown(md))
-    print "Profiles written into " + target
+        for column, val in data.iteritems():
+            md += "* " + column + ": " + str(val) + "\n"
+        md += "\n"
+    print file_name
+    write_name = file_name.split('/')[-1].split('.')[0] + '_DataProfile'
+    print write_name
+    with open(target + write_name + '.md', 'wt') as fout:
+        fout.write(md)
+
+    with open(target + write_name + '.html', 'wt') as fout:
+        fout.write(markdown.markdown(md))
 
 def get_headers(file):
     with open(file, 'rU') as fin:
@@ -140,21 +140,25 @@ def main(source, target, kind, missingcode):
     else:
         print "Generating profiles for " + str(num_files) + " files"
 
-    file_data = {}
+    print "Profiles written into " + target
+    all_file_data = {}
 
     for f in files:
         if f.endswith('.csv'):
             finfo = basic_stats(f)
             headers = get_headers(f)
             csvinfo = review_csv(f, mode = 'rU', missing = missingcode)
-            file_data[f] = ({'file_metadata': finfo, \
+            all_file_data[f] = ({'file_metadata': finfo, \
                              'csv_basic': csvinfo['csv_basic'], \
                              'columns': csvinfo['cols']})
-
-    make_md(file_data, headers, target, print_me = False, make_md = True, make_html = True)
-    write_name = f.split('/')[-1].split('.')[0] + '_DataProfile.json'
+            print "looking at " + f
+            #print len(all_file_data)
+            make_md(f, all_file_data[f], headers, target)
+    
+    write_name = target.split('/')[-2].split('.')[0] + '_DataProfiles.json'
     with open(target + write_name, 'wt') as jsonout:
         json.dump(file_data, jsonout, indent = 4)
+
 
 
 if __name__ == "__main__":
