@@ -37,7 +37,17 @@ CC-BY
 
 Fork, whack, republish, whatever. Just cite.
 
-## Example data
+## Developers
+
+Feel free to work on functions or add ons that would work with your kind of data or another format.
+
+## Contributing
+
+This is github, afterall.  Feel free to put in requests or issues and I'll take them into consideration.  Let me know if you'd like to collaborate on the project as well.  This is my first formal tool, so there are obvious limitations, etc.
+
+Keep in mind, however, that this tool will be meant for an average researcher who would just want to download something and run it.  They wouldn't necessary want to use `pip` or `conda` to install.  This tool is in proof of concept mode, so criticisms are expected to be substantive and move the conversation forward.
+
+## References
 
 The vagrant data used as example is from:
 
