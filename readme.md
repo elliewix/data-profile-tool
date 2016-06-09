@@ -1,4 +1,4 @@
-# Data Profile/Documentation tool
+# AutoDocish: Data Profile/Documentation tool
 
 This is a tool created as a project for the Spring 2016 GSLIS Data Cleaning course.
 
