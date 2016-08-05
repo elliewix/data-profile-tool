@@ -75,7 +75,7 @@ def review_csv(file, mode = 'rt', headers = True, index_row = True, missing = ''
             info['percent_digit'] = "{:.0%}".format(digits / totalvalues)
 
         if digits > 0:
-            digit_values = [d for d in data[i] if d.isdigit()]
+            digit_values = [float(d) for d in data[i] if d.isdigit()]
             info['min_digit'] = min(digit_values)
             info['max_digit'] = max(digit_values)
         else:
