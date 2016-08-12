@@ -4,9 +4,6 @@ from __future__ import division
 # -m make markdown
 # -h make html
 
-
-
-
 import os
 from os.path import isfile, join
 import csv
@@ -64,7 +61,7 @@ def review_csv(file, mode = 'rt', headers = True, index_row = True, missing = ''
                     uval_print.append(x)
             info['unique_value_content'] = "The values are:\n\t* " + "\n\t* ".join(uval_print) + "\n"
         else:
-            info['unique_value_content'] = "Not reported: More than 10 unique values"
+            info['unique_value_content'] = "Not reported (More than 10 unique values)"
         info['missing'] = data[i].count(missing)
         info['percent_missing'] = "{:.0%}".format(info['missing'] / len(data[i]))
         digits = len([d for d in data[i] if d.isdigit()])
@@ -111,7 +108,7 @@ def make_md(file_name, file_data, headers, target):
         md += "* Description of data values and units: \n"
         md += "* Reason for missing values: \n"
         md += "\n"
-        for column, val in data.iteritems():
+        for column, val in data.iteritems(): # go through all the data info
             md += "* " + column + ": " + str(val) + "\n"
         md += "\n"
     #print file_name
