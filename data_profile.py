@@ -133,9 +133,12 @@ def get_headers(file):
         
 
 def main(source, target, missingcode):
-
+    if not target.endswith('/'):
+        target += "/" # sorry windows
     #files = [source + f for f in getFiles(source)]
     if os.path.isdir(source):
+        if not source.endswith('/'):
+            source += "/"
         files = glob.glob(source + "*")
         num_files = len(files)
     elif os.path.isfile(source):
@@ -166,7 +169,6 @@ def main(source, target, missingcode):
             #print "looking at " + f
             #print len(all_file_data)
             make_md(f, all_file_data[f], headers, target)
-    
     write_name = target.split('/')[-2].split('.')[0] + '_DataProfiles.json'
     with open(target + write_name, 'wt') as jsonout:
         json.dump(all_file_data, jsonout, indent = 4)
