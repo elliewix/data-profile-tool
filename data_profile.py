@@ -45,7 +45,7 @@ def review_csv(file, mode = 'rt', headers = True, index_row = True, missing = ''
         
 
     num_columns = len(col_names)
-    col_info = {'csv_basic': {'num_rows': num_rows, 'num_columns': num_columns}, 'cols': {}}
+    col_info = {'csv_basic': {'num_rows': num_rows, 'num_columns': num_columns, 'missing': missing}, 'cols': {}}
     for i, col in enumerate(col_names):
         info = {}
         num_uniques = len(set(data[i]))

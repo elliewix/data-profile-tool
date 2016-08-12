@@ -1,10 +1,11 @@
 Data Profile for MiddlesexVagrants1777-1786v1.1.csv
 
-Generated on: 2016-Aug-11 19:58:31
+Generated on: 2016-Aug-11 20:05:31
 
 
 Number of columns: 29
 Number of rows: 14789
+Using missing value of: [missing]
 
 **Vagrant ID Number**
 -------------------

@@ -265,10 +265,11 @@
         }, 
         "csv_basic": {
             "num_rows": 14789, 
+            "missing": "[missing]", 
             "num_columns": 29
         }, 
         "file_metadata": {
-            "last_access": "2016-08-11 19:58:30", 
+            "last_access": "2016-08-11 20:05:31", 
             "size": 4641076, 
             "last_modified": "2016-04-24 17:31:01", 
             "filename": "MiddlesexVagrants1777-1786v1.1.csv"
