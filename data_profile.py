@@ -126,7 +126,7 @@ def get_headers(file):
     return headers
         
 
-def main(source, target, kind, missingcode):
+def main(source, target, missingcode):
 
     #files = [source + f for f in getFiles(source)]
     if os.path.isdir(source):
@@ -164,14 +164,16 @@ def main(source, target, kind, missingcode):
 if __name__ == "__main__":
     args = sys.argv
     #print args
-    # ['data_profile.py', '-m', 'vagrants/', 'vagrant-profiles/', '']
-    output_flag = args[1]
-    source_folder = args[2]
-    target_folder = args[3]
-    missing_code = args[4]
+    # ['data_profile.py', 'vagrants/', 'vagrant-profiles/', '']
+    source_folder = args[1]
+    target_folder = args[2]
+    if len(args) < 4:
+        missing_code = '' # presuming '' if not provided
+    else:
+        missing_code = args[3]
 
     # main(source, target, kind, missingcode)
-    main(source_folder, target_folder, output_flag, missing_code)
+    main(source_folder, target_folder, missing_code)
     # not dealing with the the mode right now, just letting it make both
 
 
