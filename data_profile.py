@@ -96,6 +96,11 @@ def make_md(file_name, file_data, headers, target):
     basic = file_data['csv_basic']
     md += "Number of columns: " + str(basic['num_columns']) + "\n"
     md += "Number of rows: " + str(basic['num_rows']) + "\n"
+    if basic['missing'] == '':
+        missing_print = "(empty string)"
+    else:
+        missing_print = basic['missing']
+    md += "Using missing value of: " + missing_print + "\n"
     md += "\n"
     info = [file_data['columns'] for f in file_data.keys()][0]
     for key in headers:#key, data in info.iteritems():
@@ -140,7 +145,13 @@ def main(source, target, missingcode):
     else:
         print "Generating profiles for " + str(num_files) + " files"
 
-    print "Profiles written into " + target
+    if os.path.isdir(target): #this will not play nicely with windows...
+        print target + " already exists. Will OVERWRITE."
+        print "Profiles written into " + target
+    else:
+        os.mkdir(target) # but I can't test windows right now...
+        print target + " created"
+        print "Profiles written into " + target
     all_file_data = {}
 
     for f in files:
@@ -165,6 +176,11 @@ if __name__ == "__main__":
     args = sys.argv
     #print args
     # ['data_profile.py', 'vagrants/', 'vagrant-profiles/', '']
+    # usage
+    # python data_profile.py source output_folder (missing_code)
+    # source may be file or folder
+    # output must be a folder
+    # missing code optional, will presume empty string if not provided
     source_folder = args[1]
     target_folder = args[2]
     if len(args) < 4:
