@@ -8,7 +8,6 @@ import os
 from os.path import isfile, join
 import csv
 import datetime
-import pandas as pd
 import glob
 import markdown
 import sys
