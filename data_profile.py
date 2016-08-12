@@ -9,7 +9,7 @@ from os.path import isfile, join
 import csv
 import datetime
 import glob
-import markdown
+#import markdown # removed html output for now
 import sys
 import json
 
@@ -121,8 +121,9 @@ def make_md(file_name, file_data, headers, target):
     with open(target + write_name + '.md', 'wt') as fout:
         fout.write(md)
 
-    with open(target + write_name + '.html', 'wt') as fout:
-        fout.write(markdown.markdown(md))
+    # the html looks like crap
+    # with open(target + write_name + '.html', 'wt') as fout:
+    #     fout.write(markdown.markdown(md))
 
 def get_headers(file):
     with open(file, 'rU') as fin:
