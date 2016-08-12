@@ -26,7 +26,7 @@ This was written using Python 2.7. Maybe it would work with Python 3 if I update
 
 This works out to:
 
-* `python data_profile` runs the script
+* `python data_profile.py` runs the script
 * `vagrants/`
 	* Provide single file path or folder with many files
 	* Currently only built to work with CSV data
