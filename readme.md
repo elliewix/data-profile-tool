@@ -10,26 +10,36 @@ Point the tool at a folder of files and it will create a markdown file with basi
 
 ## Core caveats
 
-I haven't finished everything in the script yet and haven't fully tested this.
+Still mostly a proof of concept.
+
+Path issues for windows.
+
+Unknown bugs.
 
 ## Basic use
 
 This was written using Python 2.7. Maybe it would work with Python 3 if I updated the print statements.  Anyhow. Run it on the command line.
 
-`python data_profile.py -m vagrants/ vagrant-profiles/ [missing]`
+`python data_profile.py source output missing_code`
+
+`python data_profile.py vagrants/ vagrant-profiles/ [missing]`
 
 This works out to:
 
 * `python data_profile` runs the script
-* `-m` to generate markdown output or `-h` to generate html.
-	* This is not actually implemented and will just make both.
-	* The HTML looks super nasty.
-* `vagrants/` this is the folder with the source data
+* `vagrants/`
+	* Provide single file path or folder with many files
 	* Currently only built to work with CSV data
-* `vagrant-profiles/` this is the destination folder for the profile files
-	* Does not currently make the folder if it doesn't exist, ya I need to put this in.
-* `[missing]` this is the missing code, use `''` for empty
-	* doesn't accept multiple missing values, but this could be done
+* `vagrant-profiles/` 
+	* This is the destination folder for the profile files
+	* Will either create the folder or overwrite the named contents
+	* Will create:
+		* one JSON file with all profile data
+		* one md file per source file with profile data
+* `[missing]` 
+	* this is the missing code, use `''` for empty
+	* optional, but presumes empty string if not provided
+	* cannot currently specify multiple missing values for single files
 
 ## License
 
