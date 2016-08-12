@@ -129,9 +129,13 @@ def get_headers(file):
 def main(source, target, kind, missingcode):
 
     #files = [source + f for f in getFiles(source)]
-    files = glob.glob(source + "*")
-    num_files = len(files)
-    if num_files < 10:
+    if os.path.isdir(source):
+        files = glob.glob(source + "*")
+        num_files = len(files)
+    elif os.path.isfile(source):
+        files = [source] # forcing this into a list of 1 so for loop works
+        num_files = 1
+    if num_files < 10: # change this number if you care
         print "Generating profile for: " + ", ".join(files)
     else:
         print "Generating profiles for " + str(num_files) + " files"
