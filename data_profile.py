@@ -63,7 +63,15 @@ def review_csv(file, mode = 'rt', headers = True, index_row = True, missing = ''
             info['unique_value_content'] = "Not reported (More than 10 unique values)"
         info['missing'] = data[i].count(missing)
         info['percent_missing'] = "{:.0%}".format(info['missing'] / len(data[i]))
-        digits = len([d for d in data[i] if d.isdigit()])
+        #digits = len([d for d in data[i] if d.isdigit()])
+        dcount = 0
+        for d in data[i]:
+            try:
+                float(d)
+                dcount += 1
+            except:
+                pass #hahaha i'll pay for this
+        digits = dcount
         totalvalues = len([d for d in data[i] if len(d) > 0])
         if totalvalues == 0:
             info['percent_digit'] = "no digits"
@@ -166,8 +174,6 @@ def main(source, target, missingcode):
             all_file_data[f] = ({'file_metadata': finfo, \
                              'csv_basic': csvinfo['csv_basic'], \
                              'columns': csvinfo['cols']})
-            #print "looking at " + f
-            #print len(all_file_data)
             make_md(f, all_file_data[f], headers, target)
     write_name = target.split('/')[-2].split('.')[0] + '_DataProfiles.json'
     with open(target + write_name, 'wt') as jsonout:
