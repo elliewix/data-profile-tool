@@ -1,6 +1,6 @@
 from __future__ import division
 # command line prompt
-# python data_profile.py -[mh][source folder of data] [target folder for profiles] 
+# python data_profile.py -[mh][source folder of data] [target folder for profiles]
 # -m make markdown
 # -h make html
 
@@ -42,7 +42,7 @@ def review_csv(file, mode = 'rt', headers = True, index_row = True, missing = ''
 
     num_rows = len(data)
     data = map(list, zip(*data))
-        
+
 
     num_columns = len(col_names)
     col_info = {'csv_basic': {'num_rows': num_rows, 'num_columns': num_columns, 'missing': missing}, 'cols': {}}
@@ -90,7 +90,7 @@ def review_csv(file, mode = 'rt', headers = True, index_row = True, missing = ''
         else:
             col_info['cols']['col_' + str(i)] = info
     return col_info
-            
+
 def make_md(file_name, file_data, headers, target):
     dt = '{:%Y-%b-%d %H:%M:%S}'.format(datetime.datetime.now())
     #print file_data
@@ -138,9 +138,10 @@ def get_headers(file):
         fin = csv.reader(fin)
         headers = next(fin)
     return headers
-        
+
 
 def main(source, target, missingcode):
+    do_not_write = False
     if not target.endswith('/'):
         target += "/" # sorry windows
     #files = [source + f for f in getFiles(source)]
@@ -157,28 +158,38 @@ def main(source, target, missingcode):
     else:
         print "Generating profiles for " + str(num_files) + " files"
 
-    if os.path.isdir(target): #this will not play nicely with windows...
-        print target + " already exists. Will OVERWRITE."
-        print "Profiles written into " + target
+    if os.path.isdir(target):  # this will not play nicely with windows...
+        confirm_needed = True
+        while confirm_needed:
+            confirm_overwrite = str(raw_input("\n" + target + " already exists. Do you want to overwrite? (Y/N)\n"))
+            if confirm_overwrite == "Y" or confirm_overwrite == "y":
+                confirm_needed = False
+                print "Profiles written into " + target + "\n"
+            elif confirm_overwrite == "N" or confirm_overwrite == "n":
+                do_not_write = True
+                print "Profiles not written.\n"
+                break
+            else:
+                print "Input not understood. Please try again."
     else:
-        os.mkdir(target) # but I can't test windows right now...
-        print target + " created"
-        print "Profiles written into " + target
+        os.mkdir(target)  # but I can't test windows right now...
+        print "\n" + target + " created"
+        print "\nProfiles written into " + target + "\n"
     all_file_data = {}
 
-    for f in files:
-        if f.endswith('.csv'):
-            finfo = basic_stats(f)
-            headers = get_headers(f)
-            csvinfo = review_csv(f, mode = 'rU', missing = missingcode)
-            all_file_data[f] = ({'file_metadata': finfo, \
-                             'csv_basic': csvinfo['csv_basic'], \
-                             'columns': csvinfo['cols']})
-            make_md(f, all_file_data[f], headers, target)
-    write_name = target.split('/')[-2].split('.')[0] + '_DataProfiles.json'
-    with open(target + write_name, 'wt') as jsonout:
-        json.dump(all_file_data, jsonout, indent = 4)
-
+    if not do_not_write:
+        for f in files:
+            if f.endswith('.csv'):
+                finfo = basic_stats(f)
+                headers = get_headers(f)
+                csvinfo = review_csv(f, mode = 'rU', missing = missingcode)
+                all_file_data[f] = ({'file_metadata': finfo,
+                                     'csv_basic': csvinfo['csv_basic'],
+                                     'columns': csvinfo['cols']})
+                make_md(f, all_file_data[f], headers, target)
+        write_name = target.split('/')[-2].split('.')[0] + '_DataProfiles.json'
+        with open(target + write_name, 'wt') as jsonout:
+            json.dump(all_file_data, jsonout, indent=4)
 
 
 if __name__ == "__main__":
