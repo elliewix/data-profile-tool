@@ -9,15 +9,16 @@ from os.path import isfile, join
 import csv
 import datetime
 import glob
-#import markdown # removed html output for now
+# import markdown # removed html output for now
 import sys
 import json
 
 
 def getFiles(path):
     """Function to return a list of all files within a folder"""
-    files = [ f for f in os.listdir(path) if isfile(join(path,f)) and f[0] != '.' ]
+    files = [f for f in os.listdir(path) if isfile(join(path, f)) and f[0] != '.']
     return files
+
 
 def basic_stats(file):
     stats = os.stat(file)
@@ -26,7 +27,8 @@ def basic_stats(file):
     last_access = datetime.datetime.fromtimestamp(stats.st_atime).strftime('%Y-%m-%d %H:%M:%S')
     return {'filename': file, 'size': size, 'last_access': last_access, 'last_modified': last_modified}
 
-def review_csv(file, mode = 'rt', headers = True, index_row = True, missing = ''):
+
+def review_csv(file, mode='rt', headers=True, index_row=True, missing=''):
     with open(file, mode) as fin:
         fin = csv.reader(fin)
         if headers:
@@ -42,7 +44,6 @@ def review_csv(file, mode = 'rt', headers = True, index_row = True, missing = ''
 
     num_rows = len(data)
     data = map(list, zip(*data))
-
 
     num_columns = len(col_names)
     col_info = {'csv_basic': {'num_rows': num_rows, 'num_columns': num_columns, 'missing': missing}, 'cols': {}}
@@ -63,14 +64,14 @@ def review_csv(file, mode = 'rt', headers = True, index_row = True, missing = ''
             info['unique_value_content'] = "Not reported (More than 10 unique values)"
         info['missing'] = data[i].count(missing)
         info['percent_missing'] = "{:.0%}".format(info['missing'] / len(data[i]))
-        #digits = len([d for d in data[i] if d.isdigit()])
+        # digits = len([d for d in data[i] if d.isdigit()])
         dcount = 0
         for d in data[i]:
             try:
                 float(d)
                 dcount += 1
             except:
-                pass #hahaha i'll pay for this
+                pass  # hahaha i'll pay for this
         digits = dcount
         totalvalues = len([d for d in data[i] if len(d) > 0])
         if totalvalues == 0:
@@ -91,12 +92,13 @@ def review_csv(file, mode = 'rt', headers = True, index_row = True, missing = ''
             col_info['cols']['col_' + str(i)] = info
     return col_info
 
+
 def make_md(file_name, file_data, headers, target):
     dt = '{:%Y-%b-%d %H:%M:%S}'.format(datetime.datetime.now())
-    #print file_data
-    #print file_data
-    #for x, f_data in file_data.iteritems():
-        #print f_data
+    # print file_data
+    # print file_data
+    # for x, f_data in file_data.iteritems():
+    # print f_data
     md = ""
     md += "Data Profile for " + file_name + "\n\n"
     md += "Generated on: " + dt + "\n"
@@ -111,7 +113,7 @@ def make_md(file_name, file_data, headers, target):
     md += "Using missing value of: " + missing_print + "\n"
     md += "\n"
     info = [file_data['columns'] for f in file_data.keys()][0]
-    for key in headers:#key, data in info.iteritems():
+    for key in headers:  # key, data in info.iteritems():
         data = info[key]
         md += "**" + key + "**" + "\n"
         md += "-" * (len(key) + 2) + "\n"
@@ -120,18 +122,19 @@ def make_md(file_name, file_data, headers, target):
         md += "* Description of data values and units: \n"
         md += "* Reason for missing values: \n"
         md += "\n"
-        for column, val in data.iteritems(): # go through all the data info
+        for column, val in data.iteritems():  # go through all the data info
             md += "* " + column + ": " + str(val) + "\n"
         md += "\n"
-    #print file_name
+    # print file_name
     write_name = file_name.split('/')[-1].split('.')[0] + '_DataProfile'
-    #print write_name
+    # print write_name
     with open(target + write_name + '.md', 'wt') as fout:
         fout.write(md)
 
     # the html looks like crap
     # with open(target + write_name + '.html', 'wt') as fout:
     #     fout.write(markdown.markdown(md))
+
 
 def get_headers(file):
     with open(file, 'rU') as fin:
@@ -143,17 +146,17 @@ def get_headers(file):
 def main(source, target, missingcode):
     do_not_write = False
     if not target.endswith('/'):
-        target += "/" # sorry windows
-    #files = [source + f for f in getFiles(source)]
+        target += "/"  # sorry windows
+    # files = [source + f for f in getFiles(source)]
     if os.path.isdir(source):
         if not source.endswith('/'):
             source += "/"
         files = glob.glob(source + "*")
         num_files = len(files)
     elif os.path.isfile(source):
-        files = [source] # forcing this into a list of 1 so for loop works
+        files = [source]  # forcing this into a list of 1 so for loop works
         num_files = 1
-    if num_files < 10: # change this number if you care
+    if num_files < 10:  # change this number if you care
         print "Generating profile for: " + ", ".join(files)
     else:
         print "Generating profiles for " + str(num_files) + " files"
@@ -182,7 +185,7 @@ def main(source, target, missingcode):
             if f.endswith('.csv'):
                 finfo = basic_stats(f)
                 headers = get_headers(f)
-                csvinfo = review_csv(f, mode = 'rU', missing = missingcode)
+                csvinfo = review_csv(f, mode='rU', missing=missingcode)
                 all_file_data[f] = ({'file_metadata': finfo,
                                      'csv_basic': csvinfo['csv_basic'],
                                      'columns': csvinfo['cols']})
@@ -194,7 +197,7 @@ def main(source, target, missingcode):
 
 if __name__ == "__main__":
     args = sys.argv
-    #print args
+    # print args
     # ['data_profile.py', 'vagrants/', 'vagrant-profiles/', '']
     # usage
     # python data_profile.py source output_folder (missing_code)
@@ -204,7 +207,7 @@ if __name__ == "__main__":
     source_folder = args[1]
     target_folder = args[2]
     if len(args) < 4:
-        missing_code = '' # presuming '' if not provided
+        missing_code = ''  # presuming '' if not provided
     else:
         missing_code = args[3]
 
