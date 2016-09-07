@@ -72,7 +72,7 @@ def review_csv(file, mode='rt', headers=True, index_row=True, missing=''):
             try:
                 float(d)
                 # dcount += 1
-                digits.append(d)
+                passed_digits.append(d)
             except:
                 pass  # hahaha i'll pay for this
         digits = len(passed_digits)
