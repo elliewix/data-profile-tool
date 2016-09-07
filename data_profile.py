@@ -66,24 +66,27 @@ def review_csv(file, mode='rt', headers=True, index_row=True, missing=''):
         info['missing'] = data[i].count(missing)
         info['percent_missing'] = "{:.0%}".format(info['missing'] / len(data[i]))
         # digits = len([d for d in data[i] if d.isdigit()])
-        dcount = 0
+        # dcount = 0
+        passed_digits = []
         for d in data[i]:
             try:
                 float(d)
-                dcount += 1
+                # dcount += 1
+                digits.append(d)
             except:
                 pass  # hahaha i'll pay for this
-        digits = dcount
+        digits = len(passed_digits)
         totalvalues = len([d for d in data[i] if len(d) > 0])
+
         if totalvalues == 0:
             info['percent_digit'] = "no digits"
         else:
             info['percent_digit'] = "{:.0%}".format(digits / totalvalues)
 
         if digits > 0:
-            digit_values = [float(d) for d in data[i] if d.isdigit()]
-            info['min_digit'] = min(digit_values)
-            info['max_digit'] = max(digit_values)
+            # digit_values = [float(d) for d in data[i] if d.isdigit()]
+            info['min_digit'] = min(passed_digits)
+            info['max_digit'] = max(passed_digits)
         else:
             info['min_digit'] = "no digits"
             info['max_digit'] = "no digits"

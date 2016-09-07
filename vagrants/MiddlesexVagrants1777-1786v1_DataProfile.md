@@ -1,11 +1,11 @@
 Data Profile for MiddlesexVagrants1777-1786v1.1.csv
 
-Generated on: 2016-Aug-27 16:21:39
+Generated on: 2016-Sep-07 14:05:36
 
 
 Number of columns: 29
 Number of rows: 14789
-Using missing value of: (empty string)
+Using missing value of: [missing]
 
 **Vagrant ID Number**
 -------------------
@@ -64,9 +64,9 @@ Using missing value of: (empty string)
 * min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
-	* [unknown]
-	* M
 	* F
+	* M
+	* [unknown]
 
 * unique_values: 3 (this includes missing values)
 * max_digit: no digits
@@ -83,14 +83,14 @@ Using missing value of: (empty string)
 * min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
-	* [Daughter]
-	* [unclear]
-	* [Son]
-	* [Sister]
-	* [lead vagrant]
 	* [Child]
-	* [unknown]
+	* [Daughter]
+	* [Sister]
+	* [Son]
 	* [Wife]
+	* [lead vagrant]
+	* [unclear]
+	* [unknown]
 
 * unique_values: 8 (this includes missing values)
 * max_digit: no digits
@@ -102,22 +102,22 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 1.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
 	* 1
-	* 3
 	* 2
-	* 5
+	* 3
 	* 4
-	* 7
+	* 5
 	* 6
+	* 7
 	* 8
 
 * unique_values: 8 (this includes missing values)
-* max_digit: 8.0
+* max_digit: no digits
 
 **Person Type**
 -------------
@@ -132,10 +132,10 @@ Using missing value of: (empty string)
 * missing: 0
 * unique_value_content: The values are:
 	* Dependent
-	* Solo Male
-	* Unknown Solo
 	* Group Leader
 	* Single Female
+	* Solo Male
+	* Unknown Solo
 
 * unique_values: 5 (this includes missing values)
 * max_digit: no digits
@@ -152,12 +152,12 @@ Using missing value of: (empty string)
 * min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
-	* Middlesex Vagrant
-	* Unknown
-	* Passing Vagrant
-	* Passed to Middlesex Home
-	* Westminster Vagrant
 	* City Vagrant
+	* Middlesex Vagrant
+	* Passed to Middlesex Home
+	* Passing Vagrant
+	* Unknown
+	* Westminster Vagrant
 
 * unique_values: 6 (this includes missing values)
 * max_digit: no digits
@@ -169,13 +169,13 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 2.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 23 (this includes missing values)
-* max_digit: 29.0
+* max_digit: no digits
 
 **Session Start Month**
 ---------------------
@@ -184,24 +184,24 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 1.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
-	* 11
-	* 10
-	* 12
 	* 1
+	* 10
+	* 11
+	* 12
 	* 2
-	* 5
 	* 4
-	* 7
+	* 5
 	* 6
+	* 7
 	* 9
 
 * unique_values: 10 (this includes missing values)
-* max_digit: 12.0
+* max_digit: no digits
 
 **Session Start Year**
 --------------------
@@ -210,12 +210,14 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 1777.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
 	* 1777
+	* 1778
+	* 1779
 	* 1780
 	* 1781
 	* 1782
@@ -223,11 +225,9 @@ Using missing value of: (empty string)
 	* 1784
 	* 1785
 	* 1786
-	* 1778
-	* 1779
 
 * unique_values: 10 (this includes missing values)
-* max_digit: 1786.0
+* max_digit: no digits
 
 **Session End Day**
 -----------------
@@ -236,13 +236,13 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 1.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 24 (this includes missing values)
-* max_digit: 31.0
+* max_digit: no digits
 
 **Session End Month**
 -------------------
@@ -251,24 +251,24 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 1.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
+	* 1
 	* 10
 	* 12
-	* 1
-	* 3
 	* 2
-	* 5
+	* 3
 	* 4
-	* 7
+	* 5
 	* 6
+	* 7
 	* 9
 
 * unique_values: 10 (this includes missing values)
-* max_digit: 12.0
+* max_digit: no digits
 
 **Session End Year**
 ------------------
@@ -277,11 +277,12 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 1778.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
+	* 1778
 	* 1780
 	* 1781
 	* 1782
@@ -289,10 +290,9 @@ Using missing value of: (empty string)
 	* 1784
 	* 1785
 	* 1786
-	* 1778
 
 * unique_values: 8 (this includes missing values)
-* max_digit: 1786.0
+* max_digit: no digits
 
 **Session # (out of 8 annually)**
 -------------------------------
@@ -301,22 +301,22 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 1.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
 	* 1
-	* 3
 	* 2
-	* 5
+	* 3
 	* 4
-	* 7
+	* 5
 	* 6
+	* 7
 	* 8
 
 * unique_values: 8 (this includes missing values)
-* max_digit: 8.0
+* max_digit: no digits
 
 **URL of Primary Source**
 -----------------------
@@ -390,13 +390,13 @@ Using missing value of: (empty string)
 * min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
-	* 51.6516;-0.0837
 	* 51.433315;-0.497382
-	* 51.5321;-0.1066
-	* 51.496111;-0.139722
-	* 51.69889;-0.22885
 	* 51.4835;-0.5221
+	* 51.496111;-0.139722
 	* 51.524444;-0.107222
+	* 51.5321;-0.1066
+	* 51.6516;-0.0837
+	* 51.69889;-0.22885
 	* [unknown]
 
 * unique_values: 8 (this includes missing values)

@@ -1,6 +1,6 @@
 Data Profile for fakedata/795.csv
 
-Generated on: 2016-Aug-27 16:21:12
+Generated on: 2016-Sep-07 14:05:50
 
 
 Number of columns: 10
@@ -14,23 +14,23 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 86.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
-	* 869
-	* 716
-	* 759
+	* 101
+	* 236
 	* 379
 	* 546
 	* 646
-	* 236
-	* 101
+	* 716
+	* 759
 	* 86
+	* 869
 
 * unique_values: 9 (this includes missing values)
-* max_digit: 869.0
+* max_digit: no digits
 
 **lhnpgel**
 ---------
@@ -39,23 +39,23 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 217.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
-	* 774
-	* 945
-	* 851
 	* 217
 	* 301
-	* 707
 	* 322
 	* 510
+	* 707
+	* 774
 	* 822
+	* 851
+	* 945
 
 * unique_values: 9 (this includes missing values)
-* max_digit: 945.0
+* max_digit: no digits
 
 **dejgqsnl**
 ----------
@@ -64,23 +64,23 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 123.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
-	* 883
-	* 974
-	* 879
 	* 123
-	* 926
-	* 646
 	* 434
 	* 484
+	* 646
 	* 776
+	* 879
+	* 883
+	* 926
+	* 974
 
 * unique_values: 9 (this includes missing values)
-* max_digit: 974.0
+* max_digit: no digits
 
 **ttzsbzzztt**
 ------------
@@ -89,23 +89,23 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 58.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
 	* 203
-	* 58
-	* 625
-	* 596
-	* 712
 	* 531
+	* 58
+	* 596
+	* 625
+	* 712
 	* 739
-	* 937
 	* 936
+	* 937
 
 * unique_values: 9 (this includes missing values)
-* max_digit: 937.0
+* max_digit: no digits
 
 **fswewrmgbl**
 ------------
@@ -114,23 +114,23 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 249.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
-	* 965
+	* 249
+	* 250
+	* 267
+	* 356
 	* 594
+	* 663
 	* 705
 	* 839
-	* 663
-	* 356
-	* 267
-	* 250
-	* 249
+	* 965
 
 * unique_values: 9 (this includes missing values)
-* max_digit: 965.0
+* max_digit: no digits
 
 **lqwtwpo**
 ---------
@@ -139,23 +139,23 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 96.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
-	* 631
-	* 790
-	* 572
-	* 699
-	* 860
-	* 754
 	* 439
+	* 572
+	* 631
+	* 699
+	* 754
+	* 790
+	* 860
 	* 912
 	* 96
 
 * unique_values: 9 (this includes missing values)
-* max_digit: 912.0
+* max_digit: no digits
 
 **wnlat**
 -------
@@ -164,23 +164,23 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 203.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
-	* 964
 	* 203
-	* 696
 	* 356
-	* 790
-	* 789
-	* 428
 	* 375
 	* 376
+	* 428
+	* 696
+	* 789
+	* 790
+	* 964
 
 * unique_values: 9 (this includes missing values)
-* max_digit: 964.0
+* max_digit: no digits
 
 **jfgmzi**
 --------
@@ -189,22 +189,22 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 245.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
 	* 245
 	* 322
-	* 772
 	* 334
-	* 764
 	* 357
-	* 513
 	* 501
+	* 513
+	* 764
+	* 772
 
 * unique_values: 8 (this includes missing values)
-* max_digit: 772.0
+* max_digit: no digits
 
 **tqpvwxqsvk**
 ------------
@@ -213,23 +213,23 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 28.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
-	* 28
-	* 444
-	* 378
-	* 936
-	* 547
 	* 161
+	* 28
 	* 299
+	* 378
+	* 444
+	* 547
 	* 806
 	* 927
+	* 936
 
 * unique_values: 9 (this includes missing values)
-* max_digit: 936.0
+* max_digit: no digits
 
 **kozisucyqc**
 ------------
@@ -238,21 +238,21 @@ Using missing value of: (empty string)
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
+* percent_digit: 0%
 * percent_missing: 0%
-* min_digit: 71.0
+* min_digit: no digits
 * missing: 0
 * unique_value_content: The values are:
-	* 897
-	* 197
-	* 664
-	* 712
-	* 536
 	* 180
-	* 71
-	* 494
+	* 197
 	* 233
+	* 494
+	* 536
+	* 664
+	* 71
+	* 712
+	* 897
 
 * unique_values: 9 (this includes missing values)
-* max_digit: 897.0
+* max_digit: no digits
 
