@@ -59,6 +59,7 @@ def review_csv(file, mode='rt', headers=True, index_row=True, missing=''):
                     uval_print.append("[missing code]")
                 else:
                     uval_print.append(x)
+            uval_print.sort() # sorting unique values for pretty printing
             info['unique_value_content'] = "The values are:\n\t* " + "\n\t* ".join(uval_print) + "\n"
         else:
             info['unique_value_content'] = "Not reported (More than 10 unique values)"
