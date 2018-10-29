@@ -30,9 +30,13 @@ Unknown bugs.
 
 This was written using Python 2.7. Maybe it would work with Python 3 if I updated the print statements.  Anyhow. Run it on the command line.
 
-`python data_profile.py source output missing_code`
+General use:
 
-`python data_profile.py vagrants/ vagrant-profiles/ [missing]`
+`python data_profilepy3.py source output missing_code`
+
+Working example that will run within this directory:
+
+`python data_profilepy3.py vagrants/ vagrant-profiles/ [missing]`
 
 This works out to:
 
