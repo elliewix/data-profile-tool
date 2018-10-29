@@ -29,7 +29,7 @@ def basic_stats(file):
     size = stats.st_size
     last_modified = datetime.datetime.fromtimestamp(stats.st_mtime).strftime('%Y-%m-%d %H:%M:%S')
     last_access = datetime.datetime.fromtimestamp(stats.st_atime).strftime('%Y-%m-%d %H:%M:%S')
-    return {'filename': file, 'size': size, 'last_access': last_access, 'last_modified': last_modified}
+    return {'filename': str(file.absolute()), 'size': size, 'last_access': last_access, 'last_modified': last_modified}
 
 
 def review_csv(file, mode='rt', headers=True, index_row=True, missing=''):
@@ -103,10 +103,10 @@ def review_csv(file, mode='rt', headers=True, index_row=True, missing=''):
 
 
 def make_md(file_name, file_data, headers, target):
+    # print(file_name, headers, target)
     dt = '{:%Y-%b-%d %H:%M:%S}'.format(datetime.datetime.now())
-
     md = ""
-    md += "Data Profile for " + file_name + "\n\n"
+    md += "Data Profile for " + file_name.name + "\n\n"
     md += "Generated on: " + dt + "\n"
     md += "\n\n"
     basic = file_data['csv_basic']
@@ -129,12 +129,13 @@ def make_md(file_name, file_data, headers, target):
         md += "* Reason for missing values: \n"
         md += "\n"
         for column, val in data.items():  # go through all the data info
-            md += "* " + column + ": " + str(val) + "\n"
+            md += "* " + column.replace('_', ' ') + ": " + str(val) + "\n"
         md += "\n"
     # print file_name
-    write_name = file_name.split('/')[-1].split('.')[0] + '_DataProfile'
+    write_name = file_name.stem + '_DataProfile.md'
+    # write_name = file_name.split('/')[-1].split('.')[0] + '_DataProfile'
     # print write_name
-    with open(target + write_name + '.md', 'wt') as fout:
+    with open(target.absolute() / write_name, 'wt') as fout:
         fout.write(md)
 
     # the html looks like crap
@@ -151,32 +152,35 @@ def get_headers(file):
 
 def main(source, target, missingcode):
     do_not_write = False
-    if not target.endswith('/'):
-        target += "/"  # sorry windows
+    target = Path(target)
+    source = Path(source)
+    # if not target.is_dir():
+    #     target += "/"  # sorry windows
     # files = [source + f for f in getFiles(source)]
-    if os.path.isdir(source):
-        if not source.endswith('/'):
-            source += "/"
-        files = glob.glob(source + "*")
+    if source.is_dir():
+        # if not source.endswith('/'):
+        #     source += "/"
+        files = [p.absolute() for p in source.glob('*')]
         num_files = len(files)
-    elif os.path.isfile(source):
-        files = [source]  # forcing this into a list of 1 so for loop works
+    elif source.is_file():
+        files = [source.absolute()]  # forcing this into a list of 1 so for loop works
         num_files = 1
 
     # only report out file names if there are <10 to do
     if num_files < 10:  # change this number if you care
-        print("Generating profile for: " + ", ".join(files))
+        print("Generating profile for: " + ", ".join([str(p) for p in files]))
     else:
         print("Generating profiles for " + str(num_files) + " files")
 
     if os.path.isdir(target):  # this will not play nicely with windows...
         confirm_needed = True
+        tstr = str(target.absolute())
         while confirm_needed:
-            confirm_overwrite = input("\n" + target + " already exists. Do you want to overwrite? (Y/N)\n").upper()
+            confirm_overwrite = input("\n" + tstr + " already exists. Do you want to overwrite? (Y/N)\n").upper()
             print(confirm_overwrite)
             if confirm_overwrite == "Y":
                 confirm_needed = False
-                print("Profiles written into " + target + "\n")
+                print("Profiles written into " + tstr + "\n")
             elif confirm_overwrite == "N":
                 do_not_write = True
                 print("Profiles not written.\n")
@@ -184,24 +188,25 @@ def main(source, target, missingcode):
             else:
                 print("Input not understood. Please try again.")
     else:
-        os.mkdir(target)  # but I can't test windows right now...
-        print("\n" + target + " created")
-        print("\nProfiles written into " + target + "\n")
+        target.mkdir()  # but I can't test windows right now...
+        print("\n" + str(target.absolute()) + " created")
+        print("\nProfiles written into " + str(target.absolute()) + "\n")
     all_file_data = {}
 
     if not do_not_write:
         for f in files:
-            print(f)
-            if f.endswith('.csv'):
+            f = Path(f)
+            if f.suffix == '.csv':
                 finfo = basic_stats(f)
                 headers = get_headers(f)
                 csvinfo = review_csv(f, mode='rU', missing=missingcode)
-                all_file_data[f] = ({'file_metadata': finfo,
+                all_file_data[str(f.name)] = ({'file_metadata': finfo,
                                      'csv_basic': csvinfo['csv_basic'],
                                      'columns': csvinfo['cols']})
-                make_md(f, all_file_data[f], headers, target)
-        write_name = target.split('/')[-2].split('.')[0] + '_DataProfiles.json'
-        with open(target + write_name, 'wt') as jsonout:
+                make_md(f, all_file_data[str(f.name)], headers, target)
+        write_name = str(target.stem + '_DataProfiles.json')
+        # write_name = target.split('/')[-2].split('.')[0] + '_DataProfiles.json'
+        with open(target.absolute() / write_name, 'wt') as jsonout:
             json.dump(all_file_data, jsonout, indent=4)
 
 
