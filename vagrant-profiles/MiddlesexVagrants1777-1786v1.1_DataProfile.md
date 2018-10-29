@@ -1,6 +1,6 @@
 Data Profile for MiddlesexVagrants1777-1786v1.1.csv
 
-Generated on: 2018-Oct-29 11:20:45
+Generated on: 2018-Oct-29 15:33:50
 
 
 * Number of columns: 29
@@ -18,9 +18,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Given Names**
 -------------
@@ -33,9 +33,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Surname**
 ---------
@@ -48,9 +48,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Gender of Lead Vagrant**
 ------------------------
@@ -67,9 +67,9 @@ Generated on: 2018-Oct-29 11:20:45
 
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Relationship to Lead Vagrant**
 ------------------------------
@@ -91,9 +91,9 @@ Generated on: 2018-Oct-29 11:20:45
 
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Number of People in Group**
 ---------------------------
@@ -116,8 +116,8 @@ Generated on: 2018-Oct-29 11:20:45
 * missing: 0
 * percent missing: 0%
 * percent digit: 100%
-* min digit: 1
-* max digit: 8
+* min digit: 1.0
+* max digit: 8.0
 
 **Person Type**
 -------------
@@ -136,9 +136,9 @@ Generated on: 2018-Oct-29 11:20:45
 
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Vagrant Category**
 ------------------
@@ -158,9 +158,9 @@ Generated on: 2018-Oct-29 11:20:45
 
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Session Start Day**
 -------------------
@@ -174,8 +174,8 @@ Generated on: 2018-Oct-29 11:20:45
 * missing: 0
 * percent missing: 0%
 * percent digit: 100%
-* min digit: 10
-* max digit: 9
+* min digit: 2.0
+* max digit: 29.0
 
 **Session Start Month**
 ---------------------
@@ -200,8 +200,8 @@ Generated on: 2018-Oct-29 11:20:45
 * missing: 0
 * percent missing: 0%
 * percent digit: 100%
-* min digit: 1
-* max digit: 9
+* min digit: 1.0
+* max digit: 12.0
 
 **Session Start Year**
 --------------------
@@ -226,8 +226,8 @@ Generated on: 2018-Oct-29 11:20:45
 * missing: 0
 * percent missing: 0%
 * percent digit: 100%
-* min digit: 1777
-* max digit: 1786
+* min digit: 1777.0
+* max digit: 1786.0
 
 **Session End Day**
 -----------------
@@ -241,8 +241,8 @@ Generated on: 2018-Oct-29 11:20:45
 * missing: 0
 * percent missing: 0%
 * percent digit: 100%
-* min digit: 1
-* max digit: 9
+* min digit: 1.0
+* max digit: 31.0
 
 **Session End Month**
 -------------------
@@ -267,8 +267,8 @@ Generated on: 2018-Oct-29 11:20:45
 * missing: 0
 * percent missing: 0%
 * percent digit: 100%
-* min digit: 1
-* max digit: 9
+* min digit: 1.0
+* max digit: 12.0
 
 **Session End Year**
 ------------------
@@ -291,8 +291,8 @@ Generated on: 2018-Oct-29 11:20:45
 * missing: 0
 * percent missing: 0%
 * percent digit: 100%
-* min digit: 1778
-* max digit: 1786
+* min digit: 1778.0
+* max digit: 1786.0
 
 **Session # (out of 8 annually)**
 -------------------------------
@@ -315,8 +315,8 @@ Generated on: 2018-Oct-29 11:20:45
 * missing: 0
 * percent missing: 0%
 * percent digit: 100%
-* min digit: 1
-* max digit: 8
+* min digit: 1.0
+* max digit: 8.0
 
 **URL of Primary Source**
 -----------------------
@@ -329,9 +329,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Magistrate Name**
 -----------------
@@ -344,9 +344,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Taken From**
 ------------
@@ -359,9 +359,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Conveyed To**
 -------------
@@ -374,9 +374,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Georeference (Taken From)**
 ---------------------------
@@ -398,9 +398,9 @@ Generated on: 2018-Oct-29 11:20:45
 
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Georeference (Conveyed To)**
 ----------------------------
@@ -413,9 +413,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Settlement (Micro Level)**
 --------------------------
@@ -428,9 +428,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Settlement (Area Level)**
 -------------------------
@@ -443,9 +443,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Settlement County**
 -------------------
@@ -458,9 +458,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Settlement Country**
 --------------------
@@ -473,9 +473,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Settlement Georeference (Micro Level)**
 ---------------------------------------
@@ -488,9 +488,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Settlement Georeference (Area Level)**
 --------------------------------------
@@ -503,9 +503,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Settlement Georeference (County)**
 ----------------------------------
@@ -518,9 +518,9 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 
 **Settlement Georeference (Country)**
 -----------------------------------
@@ -533,7 +533,7 @@ Generated on: 2018-Oct-29 11:20:45
 * unique value content: Not reported (More than 10 unique values)
 * missing: 0
 * percent missing: 0%
-* percent digit: 100%
-* min digit: failed to convert to float
-* max digit: failed to convert to float
+* percent digit: 0%
+* min digit: no digits
+* max digit: no digits
 

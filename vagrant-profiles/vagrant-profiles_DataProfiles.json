@@ -3,7 +3,7 @@
         "file_metadata": {
             "filename": "/Users/wickes1/Documents/GitHub/data-profile-tool/vagrants/MiddlesexVagrants1777-1786v1.1.csv",
             "size": 4641076,
-            "last_access": "2018-10-29 11:17:44",
+            "last_access": "2018-10-29 15:32:40",
             "last_modified": "2018-10-29 09:38:55"
         },
         "csv_basic": {
@@ -17,45 +17,45 @@
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Given Names": {
                 "unique_values": "444 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Surname": {
                 "unique_values": "4940 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Gender of Lead Vagrant": {
                 "unique_values": "3 (this includes missing values)",
                 "unique_value_content": "The values are:\n\t* F\n\t* M\n\t* [unknown]\n",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Relationship to Lead Vagrant": {
                 "unique_values": "8 (this includes missing values)",
                 "unique_value_content": "The values are:\n\t* [Child]\n\t* [Daughter]\n\t* [Sister]\n\t* [Son]\n\t* [Wife]\n\t* [lead vagrant]\n\t* [unclear]\n\t* [unknown]\n",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Number of People in Group": {
                 "unique_values": "8 (this includes missing values)",
@@ -63,26 +63,26 @@
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
-                "min_digit": "1",
-                "max_digit": "8"
+                "min_digit": 1.0,
+                "max_digit": 8.0
             },
             "Person Type": {
                 "unique_values": "5 (this includes missing values)",
                 "unique_value_content": "The values are:\n\t* Dependent\n\t* Group Leader\n\t* Single Female\n\t* Solo Male\n\t* Unknown Solo\n",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Vagrant Category": {
                 "unique_values": "6 (this includes missing values)",
                 "unique_value_content": "The values are:\n\t* City Vagrant\n\t* Middlesex Vagrant\n\t* Passed to Middlesex Home\n\t* Passing Vagrant\n\t* Unknown\n\t* Westminster Vagrant\n",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Session Start Day": {
                 "unique_values": "23 (this includes missing values)",
@@ -90,8 +90,8 @@
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
-                "min_digit": "10",
-                "max_digit": "9"
+                "min_digit": 2.0,
+                "max_digit": 29.0
             },
             "Session Start Month": {
                 "unique_values": "10 (this includes missing values)",
@@ -99,8 +99,8 @@
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
-                "min_digit": "1",
-                "max_digit": "9"
+                "min_digit": 1.0,
+                "max_digit": 12.0
             },
             "Session Start Year": {
                 "unique_values": "10 (this includes missing values)",
@@ -108,8 +108,8 @@
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
-                "min_digit": "1777",
-                "max_digit": "1786"
+                "min_digit": 1777.0,
+                "max_digit": 1786.0
             },
             "Session End Day": {
                 "unique_values": "24 (this includes missing values)",
@@ -117,8 +117,8 @@
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
-                "min_digit": "1",
-                "max_digit": "9"
+                "min_digit": 1.0,
+                "max_digit": 31.0
             },
             "Session End Month": {
                 "unique_values": "10 (this includes missing values)",
@@ -126,8 +126,8 @@
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
-                "min_digit": "1",
-                "max_digit": "9"
+                "min_digit": 1.0,
+                "max_digit": 12.0
             },
             "Session End Year": {
                 "unique_values": "8 (this includes missing values)",
@@ -135,8 +135,8 @@
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
-                "min_digit": "1778",
-                "max_digit": "1786"
+                "min_digit": 1778.0,
+                "max_digit": 1786.0
             },
             "Session # (out of 8 annually)": {
                 "unique_values": "8 (this includes missing values)",
@@ -144,134 +144,134 @@
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
-                "min_digit": "1",
-                "max_digit": "8"
+                "min_digit": 1.0,
+                "max_digit": 8.0
             },
             "URL of Primary Source": {
                 "unique_values": "422 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Magistrate Name": {
                 "unique_values": "865 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Taken From": {
                 "unique_values": "11 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Conveyed To": {
                 "unique_values": "256 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Georeference (Taken From)": {
                 "unique_values": "8 (this includes missing values)",
                 "unique_value_content": "The values are:\n\t* 51.433315;-0.497382\n\t* 51.4835;-0.5221\n\t* 51.496111;-0.139722\n\t* 51.524444;-0.107222\n\t* 51.5321;-0.1066\n\t* 51.6516;-0.0837\n\t* 51.69889;-0.22885\n\t* [unknown]\n",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Georeference (Conveyed To)": {
                 "unique_values": "120 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Settlement (Micro Level)": {
                 "unique_values": "3051 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Settlement (Area Level)": {
                 "unique_values": "71 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Settlement County": {
                 "unique_values": "129 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Settlement Country": {
                 "unique_values": "14 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Settlement Georeference (Micro Level)": {
                 "unique_values": "2097 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Settlement Georeference (Area Level)": {
                 "unique_values": "69 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Settlement Georeference (County)": {
                 "unique_values": "118 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             },
             "Settlement Georeference (Country)": {
                 "unique_values": "14 (this includes missing values)",
                 "unique_value_content": "Not reported (More than 10 unique values)",
                 "missing": 0,
                 "percent_missing": "0%",
-                "percent_digit": "100%",
-                "min_digit": "failed to convert to float",
-                "max_digit": "failed to convert to float"
+                "percent_digit": "0%",
+                "min_digit": "no digits",
+                "max_digit": "no digits"
             }
         }
     }

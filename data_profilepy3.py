@@ -75,12 +75,14 @@ def review_csv(file, mode='rt', headers=True, index_row=True, missing=''):
         passed_digits = []
         for d in data[i]:
             try:
-                float(d)
+                d = float(d)
+                print(d, "this is a float")
                 # dcount += 1
-                passed_digits.append(d)
+                passed_digits.append(float(d))
             except:
-                passed_digits.append('failed to convert to float')
+                pass # passed_digits.append('failed to convert to float')
         digits = len(passed_digits)
+        print(digits)
         totalvalues = len([d for d in data[i] if len(d) > 0])
 
         if totalvalues == 0:
