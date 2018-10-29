@@ -4,15 +4,25 @@ This is a tool created as a project for the Spring 2016 GSLIS Data Cleaning cour
 
 The products of this tool will sit somewhere between auto-documentaiton and data profiling.
 
+## PyData presentation
+
+This tool was presented at PyData Chicago 2016.  Talk recording:  https://www.youtube.com/watch?v=Hb7nvHbwNAw&t=4s
+
 ## Basic purpose
 
 Point the tool at a folder of files and it will create a markdown file with basic statistics about each column along with template areas for you to write a narrative about each column.  You can then render that into HTML or simply include it in your data package as documentation.
+
+## Python 3 is in progress
+
+`data_profilepy3.py` is the version updated for python 3 and contains the most up to date code.  Has the same use.
+
+Consider the python 2 version deprecated.
 
 ## Core caveats
 
 Still mostly a proof of concept.
 
-Path issues for windows.
+Path issues for windows.  This was hopefully fixed.
 
 Unknown bugs.
 
@@ -20,9 +30,13 @@ Unknown bugs.
 
 This was written using Python 2.7. Maybe it would work with Python 3 if I updated the print statements.  Anyhow. Run it on the command line.
 
-`python data_profile.py source output missing_code`
+General use:
 
-`python data_profile.py vagrants/ vagrant-profiles/ [missing]`
+`python data_profilepy3.py source output missing_code`
+
+Working example that will run within this directory:
+
+`python data_profilepy3.py vagrants/ vagrant-profiles/ [missing]`
 
 This works out to:
 
