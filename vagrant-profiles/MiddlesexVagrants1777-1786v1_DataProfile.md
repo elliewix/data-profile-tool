@@ -1,11 +1,11 @@
-Data Profile for MiddlesexVagrants1777-1786v1.1.csv
+Data Profile for vagrants/MiddlesexVagrants1777-1786v1.1.csv
 
-Generated on: 2016-Aug-11 21:03:12
+Generated on: 2018-Oct-29 10:13:26
 
 
-Number of columns: 29
-Number of rows: 14789
-Using missing value of: [missing]
+* Number of columns: 29
+* Number of rows: 14789
+* Using missing value of: [missing]
 
 **Vagrant ID Number**
 -------------------
@@ -14,13 +14,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 14787 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Given Names**
 -------------
@@ -29,13 +29,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 444 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Surname**
 ---------
@@ -44,13 +44,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 4940 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Gender of Lead Vagrant**
 ------------------------
@@ -59,17 +59,17 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: The values are:
-	* [unknown]
-	* M
-	* F
-
 * unique_values: 3 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: The values are:
+	* F
+	* M
+	* [unknown]
+
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Relationship to Lead Vagrant**
 ------------------------------
@@ -78,22 +78,22 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: The values are:
-	* [Daughter]
-	* [unclear]
-	* [Son]
-	* [Sister]
-	* [lead vagrant]
-	* [Child]
-	* [unknown]
-	* [Wife]
-
 * unique_values: 8 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: The values are:
+	* [Child]
+	* [Daughter]
+	* [Sister]
+	* [Son]
+	* [Wife]
+	* [lead vagrant]
+	* [unclear]
+	* [unknown]
+
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Number of People in Group**
 ---------------------------
@@ -102,22 +102,22 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
-* percent_missing: 0%
-* min_digit: 1.0
-* missing: 0
+* unique_values: 8 (this includes missing values)
 * unique_value_content: The values are:
 	* 1
-	* 3
 	* 2
-	* 5
+	* 3
 	* 4
-	* 7
+	* 5
 	* 6
+	* 7
 	* 8
 
-* unique_values: 8 (this includes missing values)
-* max_digit: 8.0
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: 1
+* max_digit: 8
 
 **Person Type**
 -------------
@@ -126,19 +126,19 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
+* unique_values: 5 (this includes missing values)
 * unique_value_content: The values are:
 	* Dependent
-	* Solo Male
-	* Unknown Solo
 	* Group Leader
 	* Single Female
+	* Solo Male
+	* Unknown Solo
 
-* unique_values: 5 (this includes missing values)
-* max_digit: no digits
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Vagrant Category**
 ------------------
@@ -147,20 +147,20 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: The values are:
-	* Middlesex Vagrant
-	* Unknown
-	* Passing Vagrant
-	* Passed to Middlesex Home
-	* Westminster Vagrant
-	* City Vagrant
-
 * unique_values: 6 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: The values are:
+	* City Vagrant
+	* Middlesex Vagrant
+	* Passed to Middlesex Home
+	* Passing Vagrant
+	* Unknown
+	* Westminster Vagrant
+
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Session Start Day**
 -------------------
@@ -169,13 +169,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
-* percent_missing: 0%
-* min_digit: 2.0
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 23 (this includes missing values)
-* max_digit: 29.0
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: 10
+* max_digit: 9
 
 **Session Start Month**
 ---------------------
@@ -184,24 +184,24 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
-* percent_missing: 0%
-* min_digit: 1.0
-* missing: 0
+* unique_values: 10 (this includes missing values)
 * unique_value_content: The values are:
-	* 11
-	* 10
-	* 12
 	* 1
+	* 10
+	* 11
+	* 12
 	* 2
-	* 5
 	* 4
-	* 7
+	* 5
 	* 6
+	* 7
 	* 9
 
-* unique_values: 10 (this includes missing values)
-* max_digit: 12.0
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: 1
+* max_digit: 9
 
 **Session Start Year**
 --------------------
@@ -210,12 +210,11 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
-* percent_missing: 0%
-* min_digit: 1777.0
-* missing: 0
+* unique_values: 10 (this includes missing values)
 * unique_value_content: The values are:
 	* 1777
+	* 1778
+	* 1779
 	* 1780
 	* 1781
 	* 1782
@@ -223,11 +222,12 @@ Using missing value of: [missing]
 	* 1784
 	* 1785
 	* 1786
-	* 1778
-	* 1779
 
-* unique_values: 10 (this includes missing values)
-* max_digit: 1786.0
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: 1777
+* max_digit: 1786
 
 **Session End Day**
 -----------------
@@ -236,13 +236,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
-* percent_missing: 0%
-* min_digit: 1.0
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 24 (this includes missing values)
-* max_digit: 31.0
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: 1
+* max_digit: 9
 
 **Session End Month**
 -------------------
@@ -251,24 +251,24 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
-* percent_missing: 0%
-* min_digit: 1.0
-* missing: 0
+* unique_values: 10 (this includes missing values)
 * unique_value_content: The values are:
+	* 1
 	* 10
 	* 12
-	* 1
-	* 3
 	* 2
-	* 5
+	* 3
 	* 4
-	* 7
+	* 5
 	* 6
+	* 7
 	* 9
 
-* unique_values: 10 (this includes missing values)
-* max_digit: 12.0
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: 1
+* max_digit: 9
 
 **Session End Year**
 ------------------
@@ -277,11 +277,9 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
-* percent_missing: 0%
-* min_digit: 1778.0
-* missing: 0
+* unique_values: 8 (this includes missing values)
 * unique_value_content: The values are:
+	* 1778
 	* 1780
 	* 1781
 	* 1782
@@ -289,10 +287,12 @@ Using missing value of: [missing]
 	* 1784
 	* 1785
 	* 1786
-	* 1778
 
-* unique_values: 8 (this includes missing values)
-* max_digit: 1786.0
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: 1778
+* max_digit: 1786
 
 **Session # (out of 8 annually)**
 -------------------------------
@@ -301,22 +301,22 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 100%
-* percent_missing: 0%
-* min_digit: 1.0
-* missing: 0
+* unique_values: 8 (this includes missing values)
 * unique_value_content: The values are:
 	* 1
-	* 3
 	* 2
-	* 5
+	* 3
 	* 4
-	* 7
+	* 5
 	* 6
+	* 7
 	* 8
 
-* unique_values: 8 (this includes missing values)
-* max_digit: 8.0
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: 1
+* max_digit: 8
 
 **URL of Primary Source**
 -----------------------
@@ -325,13 +325,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 422 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Magistrate Name**
 -----------------
@@ -340,13 +340,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 865 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Taken From**
 ------------
@@ -355,13 +355,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 11 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Conveyed To**
 -------------
@@ -370,13 +370,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 256 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Georeference (Taken From)**
 ---------------------------
@@ -385,22 +385,22 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
+* unique_values: 8 (this includes missing values)
 * unique_value_content: The values are:
-	* 51.6516;-0.0837
 	* 51.433315;-0.497382
-	* 51.5321;-0.1066
-	* 51.496111;-0.139722
-	* 51.69889;-0.22885
 	* 51.4835;-0.5221
+	* 51.496111;-0.139722
 	* 51.524444;-0.107222
+	* 51.5321;-0.1066
+	* 51.6516;-0.0837
+	* 51.69889;-0.22885
 	* [unknown]
 
-* unique_values: 8 (this includes missing values)
-* max_digit: no digits
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Georeference (Conveyed To)**
 ----------------------------
@@ -409,13 +409,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 120 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Settlement (Micro Level)**
 --------------------------
@@ -424,13 +424,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 3051 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Settlement (Area Level)**
 -------------------------
@@ -439,13 +439,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 71 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Settlement County**
 -------------------
@@ -454,13 +454,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 129 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Settlement Country**
 --------------------
@@ -469,13 +469,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 14 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Settlement Georeference (Micro Level)**
 ---------------------------------------
@@ -484,13 +484,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 2097 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Settlement Georeference (Area Level)**
 --------------------------------------
@@ -499,13 +499,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 69 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Settlement Georeference (County)**
 ----------------------------------
@@ -514,13 +514,13 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 118 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
 **Settlement Georeference (Country)**
 -----------------------------------
@@ -529,11 +529,11 @@ Using missing value of: [missing]
 * Description of data values and units: 
 * Reason for missing values: 
 
-* percent_digit: 0%
-* percent_missing: 0%
-* min_digit: no digits
-* missing: 0
-* unique_value_content: Not reported (More than 10 unique values)
 * unique_values: 14 (this includes missing values)
-* max_digit: no digits
+* unique_value_content: Not reported (More than 10 unique values)
+* missing: 0
+* percent_missing: 0%
+* percent_digit: 100%
+* min_digit: failed to convert to float
+* max_digit: failed to convert to float
 
