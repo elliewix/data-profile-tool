@@ -43,11 +43,12 @@ def review_csv(file, mode='rt', headers=True, index_row=True, missing=''):
         ids = "None declared"
 
     num_rows = len(data)
-    data = map(list, zip(*data))
+    data = list(map(list, zip(*data)))
 
     num_columns = len(col_names)
     col_info = {'csv_basic': {'num_rows': num_rows, 'num_columns': num_columns, 'missing': missing}, 'cols': {}}
     for i, col in enumerate(col_names):
+
         info = {}
         num_uniques = len(set(data[i]))
         info['unique_values'] = str(num_uniques) + " (this includes missing values)"
@@ -99,10 +100,7 @@ def review_csv(file, mode='rt', headers=True, index_row=True, missing=''):
 
 def make_md(file_name, file_data, headers, target):
     dt = '{:%Y-%b-%d %H:%M:%S}'.format(datetime.datetime.now())
-    # print file_data
-    # print file_data
-    # for x, f_data in file_data.iteritems():
-    # print f_data
+
     md = ""
     md += "Data Profile for " + file_name + "\n\n"
     md += "Generated on: " + dt + "\n"
@@ -117,7 +115,7 @@ def make_md(file_name, file_data, headers, target):
     md += "* Using missing value of: " + missing_print + "\n"
     md += "\n"
     info = [file_data['columns'] for f in file_data.keys()][0]
-    for key in headers:  # key, data in info.iteritems():
+    for key in headers:
         data = info[key]
         md += "**" + key + "**" + "\n"
         md += "-" * (len(key) + 2) + "\n"
@@ -126,7 +124,7 @@ def make_md(file_name, file_data, headers, target):
         md += "* Description of data values and units: \n"
         md += "* Reason for missing values: \n"
         md += "\n"
-        for column, val in data.iteritems():  # go through all the data info
+        for column, val in data.items():  # go through all the data info
             md += "* " + column + ": " + str(val) + "\n"
         md += "\n"
     # print file_name
