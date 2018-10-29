@@ -3,7 +3,7 @@
         "file_metadata": {
             "filename": "/Users/wickes1/Documents/GitHub/data-profile-tool/vagrants/MiddlesexVagrants1777-1786v1.1.csv",
             "size": 4641076,
-            "last_access": "2018-10-29 15:32:40",
+            "last_access": "2018-10-29 15:48:25",
             "last_modified": "2018-10-29 09:38:55"
         },
         "csv_basic": {
@@ -41,7 +41,7 @@
             },
             "Gender of Lead Vagrant": {
                 "unique_values": "3 (this includes missing values)",
-                "unique_value_content": "The values are:\n\t* F\n\t* M\n\t* [unknown]\n",
+                "unique_value_content": "The values are:\n\t* F\n\t* M\n\t* [unknown]",
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "0%",
@@ -50,7 +50,7 @@
             },
             "Relationship to Lead Vagrant": {
                 "unique_values": "8 (this includes missing values)",
-                "unique_value_content": "The values are:\n\t* [Child]\n\t* [Daughter]\n\t* [Sister]\n\t* [Son]\n\t* [Wife]\n\t* [lead vagrant]\n\t* [unclear]\n\t* [unknown]\n",
+                "unique_value_content": "The values are:\n\t* [Child]\n\t* [Daughter]\n\t* [Sister]\n\t* [Son]\n\t* [Wife]\n\t* [lead vagrant]\n\t* [unclear]\n\t* [unknown]",
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "0%",
@@ -59,7 +59,7 @@
             },
             "Number of People in Group": {
                 "unique_values": "8 (this includes missing values)",
-                "unique_value_content": "The values are:\n\t* 1\n\t* 2\n\t* 3\n\t* 4\n\t* 5\n\t* 6\n\t* 7\n\t* 8\n",
+                "unique_value_content": "The values are:\n\t* 1\n\t* 2\n\t* 3\n\t* 4\n\t* 5\n\t* 6\n\t* 7\n\t* 8",
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
@@ -68,7 +68,7 @@
             },
             "Person Type": {
                 "unique_values": "5 (this includes missing values)",
-                "unique_value_content": "The values are:\n\t* Dependent\n\t* Group Leader\n\t* Single Female\n\t* Solo Male\n\t* Unknown Solo\n",
+                "unique_value_content": "The values are:\n\t* Dependent\n\t* Group Leader\n\t* Single Female\n\t* Solo Male\n\t* Unknown Solo",
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "0%",
@@ -77,7 +77,7 @@
             },
             "Vagrant Category": {
                 "unique_values": "6 (this includes missing values)",
-                "unique_value_content": "The values are:\n\t* City Vagrant\n\t* Middlesex Vagrant\n\t* Passed to Middlesex Home\n\t* Passing Vagrant\n\t* Unknown\n\t* Westminster Vagrant\n",
+                "unique_value_content": "The values are:\n\t* City Vagrant\n\t* Middlesex Vagrant\n\t* Passed to Middlesex Home\n\t* Passing Vagrant\n\t* Unknown\n\t* Westminster Vagrant",
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "0%",
@@ -95,7 +95,7 @@
             },
             "Session Start Month": {
                 "unique_values": "10 (this includes missing values)",
-                "unique_value_content": "The values are:\n\t* 1\n\t* 10\n\t* 11\n\t* 12\n\t* 2\n\t* 4\n\t* 5\n\t* 6\n\t* 7\n\t* 9\n",
+                "unique_value_content": "The values are:\n\t* 1\n\t* 10\n\t* 11\n\t* 12\n\t* 2\n\t* 4\n\t* 5\n\t* 6\n\t* 7\n\t* 9",
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
@@ -104,7 +104,7 @@
             },
             "Session Start Year": {
                 "unique_values": "10 (this includes missing values)",
-                "unique_value_content": "The values are:\n\t* 1777\n\t* 1778\n\t* 1779\n\t* 1780\n\t* 1781\n\t* 1782\n\t* 1783\n\t* 1784\n\t* 1785\n\t* 1786\n",
+                "unique_value_content": "The values are:\n\t* 1777\n\t* 1778\n\t* 1779\n\t* 1780\n\t* 1781\n\t* 1782\n\t* 1783\n\t* 1784\n\t* 1785\n\t* 1786",
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
@@ -122,7 +122,7 @@
             },
             "Session End Month": {
                 "unique_values": "10 (this includes missing values)",
-                "unique_value_content": "The values are:\n\t* 1\n\t* 10\n\t* 12\n\t* 2\n\t* 3\n\t* 4\n\t* 5\n\t* 6\n\t* 7\n\t* 9\n",
+                "unique_value_content": "The values are:\n\t* 1\n\t* 10\n\t* 12\n\t* 2\n\t* 3\n\t* 4\n\t* 5\n\t* 6\n\t* 7\n\t* 9",
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
@@ -131,7 +131,7 @@
             },
             "Session End Year": {
                 "unique_values": "8 (this includes missing values)",
-                "unique_value_content": "The values are:\n\t* 1778\n\t* 1780\n\t* 1781\n\t* 1782\n\t* 1783\n\t* 1784\n\t* 1785\n\t* 1786\n",
+                "unique_value_content": "The values are:\n\t* 1778\n\t* 1780\n\t* 1781\n\t* 1782\n\t* 1783\n\t* 1784\n\t* 1785\n\t* 1786",
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
@@ -140,7 +140,7 @@
             },
             "Session # (out of 8 annually)": {
                 "unique_values": "8 (this includes missing values)",
-                "unique_value_content": "The values are:\n\t* 1\n\t* 2\n\t* 3\n\t* 4\n\t* 5\n\t* 6\n\t* 7\n\t* 8\n",
+                "unique_value_content": "The values are:\n\t* 1\n\t* 2\n\t* 3\n\t* 4\n\t* 5\n\t* 6\n\t* 7\n\t* 8",
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "100%",
@@ -185,7 +185,7 @@
             },
             "Georeference (Taken From)": {
                 "unique_values": "8 (this includes missing values)",
-                "unique_value_content": "The values are:\n\t* 51.433315;-0.497382\n\t* 51.4835;-0.5221\n\t* 51.496111;-0.139722\n\t* 51.524444;-0.107222\n\t* 51.5321;-0.1066\n\t* 51.6516;-0.0837\n\t* 51.69889;-0.22885\n\t* [unknown]\n",
+                "unique_value_content": "The values are:\n\t* 51.433315;-0.497382\n\t* 51.4835;-0.5221\n\t* 51.496111;-0.139722\n\t* 51.524444;-0.107222\n\t* 51.5321;-0.1066\n\t* 51.6516;-0.0837\n\t* 51.69889;-0.22885\n\t* [unknown]",
                 "missing": 0,
                 "percent_missing": "0%",
                 "percent_digit": "0%",

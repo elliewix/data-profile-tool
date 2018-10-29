@@ -65,7 +65,7 @@ def review_csv(file, mode='rt', headers=True, index_row=True, missing=''):
                 else:
                     uval_print.append(x)
             uval_print.sort() # sorting unique values for pretty printing
-            info['unique_value_content'] = "The values are:\n\t* " + "\n\t* ".join(uval_print) + "\n"
+            info['unique_value_content'] = "The values are:\n\t* " + "\n\t* ".join(uval_print)
         else:
             info['unique_value_content'] = "Not reported (More than 10 unique values)"
         info['missing'] = data[i].count(missing)
@@ -76,13 +76,14 @@ def review_csv(file, mode='rt', headers=True, index_row=True, missing=''):
         for d in data[i]:
             try:
                 d = float(d)
-                print(d, "this is a float")
                 # dcount += 1
                 passed_digits.append(float(d))
             except:
+                # this is fine becasue this is simply testing
+                # if it can be done at all
+                # stop fretting, elizabeth.
                 pass # passed_digits.append('failed to convert to float')
         digits = len(passed_digits)
-        print(digits)
         totalvalues = len([d for d in data[i] if len(d) > 0])
 
         if totalvalues == 0:
@@ -125,13 +126,13 @@ def make_md(file_name, file_data, headers, target):
         data = info[key]
         md += "**" + key + "**" + "\n"
         md += "-" * (len(key) + 2) + "\n"
-        md += "* Description of column: \n"
-        md += "* Collection methods: \n"
-        md += "* Description of data values and units: \n"
-        md += "* Reason for missing values: \n"
-        md += "\n"
+        md += "* Description of column: (you fill in)\n"
+        md += "* Collection methods: (you fill in)\n"
+        md += "* Description of data values and units: (you fill in)\n"
+        md += "* Reason for missing values: (you fill in)\n"
+        # md += "\n"
         for column, val in data.items():  # go through all the data info
-            md += "* " + column.replace('_', ' ') + ": " + str(val) + "\n"
+            md += "* " + column.replace('_', ' ').capitalize() + ": " + str(val) + "\n"
         md += "\n"
     # print file_name
     write_name = file_name.stem + '_DataProfile.md'
