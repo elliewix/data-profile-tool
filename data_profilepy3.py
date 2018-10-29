@@ -12,12 +12,16 @@ import glob
 # import markdown # removed html output for now
 import sys
 import json
+from pathlib import Path
 
-
-def getFiles(path):
-    """Function to return a list of all files within a folder"""
-    files = [f for f in os.listdir(path) if isfile(join(path, f)) and f[0] != '.']
-    return files
+# this wasn't being used!!!!!!
+# def getFiles(path):
+#     """Function to return a list of all files within a folder"""
+#     files = [f for f in os.listdir(path) if isfile(join(path, f)) and f[0] != '.']
+#     p = Path(path)
+#     print(glob.glob(p.read_text() / "*"))
+#     print('hello')
+#     return files
 
 
 def basic_stats(file):
@@ -131,7 +135,6 @@ def make_md(file_name, file_data, headers, target):
     write_name = file_name.split('/')[-1].split('.')[0] + '_DataProfile'
     # print write_name
     with open(target + write_name + '.md', 'wt') as fout:
-        print("hello writing")
         fout.write(md)
 
     # the html looks like crap
